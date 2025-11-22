@@ -31,7 +31,7 @@
 
 <!-- ABOUT THE PROJECT -->
 # Why this copied package?
-The original package contained a bug that prevented successful brm-to-edf conversion. This bug has been fixed. This package can be instaleld using this path instead of the installation path below:
+The original package contained a bug that prevented successful brm-to-edf conversion. This bug has been fixed. The corrected package can be instaled using this path instead of the installation path below:
 
 ```python
 pip install -U git+https://github.com/nora-bruns/ensemble_eeg_bugfix.git
