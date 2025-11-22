@@ -10,6 +10,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 <!-- TABLE OF CONTENTS -->
+- [Why this copied package?](#why-this-copied-package)
 - [ENSEMBLE EEG](#ensemble-eeg)
   - [Getting started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -29,6 +30,15 @@
   - [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
+# Why this copied package?
+The original package contained a bug that prevented successful brm-to-edf conversion. This bug has been fixed. This package can be instaleld using this path instead of the installation path below:
+
+```python
+pip install -U git+https://github.com/nora-bruns/ensemble_eeg_bugfix.git
+```
+
+The rest should work as described below.
+
 # ENSEMBLE EEG
 Ensemble EEG is a library of EEG analysis tools for the ENSEMBLE study. As of
 today it is focuses on 5 separate things:
