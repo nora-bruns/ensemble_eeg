@@ -217,7 +217,7 @@ def write_edf_header(fd, header):
                     val = b" " * size
 
                 if not isinstance(val, bytes):
-                    val = bytes(val, encoding="ascii").ljust(size, b" ")
+                    val = bytes(str(val), encoding="ascii").ljust(size, b" ")
 
                 if len(val) > size:
                     try:
