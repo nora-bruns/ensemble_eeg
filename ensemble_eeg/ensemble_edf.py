@@ -228,8 +228,7 @@ def write_edf_header(fd, header):
                         ) from e
                     # convert float to scientific expression
                     precision = 2 if val >= 0 else 1
-                    val = bytes(f"{val:.{precision}e}", encoding="ascii").ljust(
-                        size, b" "
+                    val = bytes(str(f"{float(val):.{precision}e}"), encoding="ascii").ljust(size, b" ")
                     )
 
                 assert len(val) == size, (
